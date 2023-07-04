@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+.header h1 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #883ceb;
+  border-radius: 10px;
+}
+
+i {
+  cursor: pointer;
+}
+i:hover {
+  color: #f5f5f5;
+}
+
+/* loader animation */
+
+.k {
+  animation: p 1s infinite;
+}
+
+@keyframes p {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.s {
+  animation: k 1s infinite;
+}
+
+@keyframes k {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.r {
+  animation: s 1s infinite;
+}
+
+@keyframes s {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* input */
+
+input,
+textarea {
+  height: 40px;
+  border: 1px solid gray;
+  width: 100%;
+  padding-left: 20px;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid rgba(165, 168, 161, 0.5);
+}
+
+textarea {
+  height: 100px;
+  padding-top: 10px;
+}
+
+.title-name {
+  background: linear-gradient(55deg, #7ee4b3 0%, #4975f4 50%, #8d38eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-name::selection {
+  background: rgba(255, 255, 255, 0.2);
+}
+.login-page {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+}
+
+.login-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
